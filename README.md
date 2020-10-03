@@ -2,7 +2,7 @@
 A complete guide &amp; resources to Open source contribution
 
 
-#Version - 1
+# Version - 1
 
 List all github issues with advanced filters like Filter by:
 1. Programming language
