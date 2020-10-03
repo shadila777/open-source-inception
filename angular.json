@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "open-source-inception"
+    }
+  },
+  "defaultProject": "open-source-inception",
+  "cli": {
+    "analytics": false
+  }
 }
