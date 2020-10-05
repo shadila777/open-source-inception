@@ -1,0 +1,110 @@
+@mixin headingStyle {
+    
+    color: black;
+    background: white;
+    height: 800px;
+    width: 800px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+@mixin button {
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+   display: flex;
+  align-items: center;
+  flex-direction: row;
+  
+  justify-content: flex-end;
+  
+    
+    
+    
+}
+@mixin language {
+    background-color: #4c6ca0;
+    border-radius: 10px;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    border: #4c6ca0 solid 3px;
+    width: 100px;
+    color: 	white;
+    font-size: 14px;
+    
+}
+@mixin list {
+    font-size: 16px;
+    
+}
+@mixin properties {
+    
+    border-radius: 10px;
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+    border: #696969 solid 3px;
+    width: 100px;
+    color: 	white;
+    background-color:	#696969;
+    font-size: 14px;
+   
+    
+}
+header{
+    h1{
+      font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+body{
+    @include headingStyle;
+}
+.first-container {
+    display: flex;
+    
+    padding-left: 200px;
+   
+    .item{
+        
+        @include properties;
+    }
+}
+.fourth-container{
+    display: flex;
+    
+    padding-left: 200px;
+   
+    .item{
+        
+        @include properties;
+    }
+
+}
+.sixth{
+    
+    display: flex;
+    div{
+        @include language;
+    }
+}
+.third{
+    
+    display: flex;
+    div{
+        @include language;
+    }
+}
+.butt{
+    padding-left: 650px;
+    button{
+    @include button;
+    }
+    
+}
+.part2{
+    border: grey solid 3px;
+}
