@@ -9,18 +9,13 @@
 }
 @mixin button {
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #696969;
     margin: 10px;
     padding: 10px;
    display: flex;
   align-items: center;
   flex-direction: row;
-  
-  justify-content: flex-end;
-  
-    
-    
-    
+   justify-content: flex-end;
 }
 @mixin language {
     background-color: #4c6ca0;
@@ -35,7 +30,9 @@
     
 }
 @mixin list {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    list-style: none;
     
 }
 @mixin properties {
@@ -45,10 +42,11 @@
     padding: 1px;
     text-align: center;
     border: #696969 solid 3px;
-    width: 100px;
+    width: 130px;
     color: 	white;
     background-color:	#696969;
     font-size: 14px;
+    font-weight: bold;
    
     
 }
@@ -58,6 +56,7 @@ header{
     }
     p{
         font-size: 15px;
+        font-weight: bold;
     }
 }
 body{
@@ -73,6 +72,13 @@ body{
         @include properties;
     }
 }
+.second-container{
+    @include list;
+    ul li div{
+     text-decoration-style: dashed;
+     text-decoration: underline;
+    }
+}
 .fourth-container{
     display: flex;
     
@@ -82,7 +88,13 @@ body{
         
         @include properties;
     }
-
+}
+.fifth-container{
+    @include list;
+    ul li div{
+        text-decoration-style: dashed;
+     text-decoration: underline;
+    }
 }
 .sixth{
     
@@ -100,8 +112,11 @@ body{
 }
 .butt{
     padding-left: 650px;
+    
     button{
     @include button;
+    font-weight: bold;
+
     }
     
 }
